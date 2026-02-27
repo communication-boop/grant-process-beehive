@@ -4,15 +4,15 @@ import { Mail, UserCheck, PenTool, TrendingUp, AlertTriangle, CheckCircle, Arrow
 const GrantProcess = () => {
   const [activeStep, setActiveStep] = useState(0);
 
-  // Палітра ў стылі БЧБ (Белы-Чырвоны-Белы)
-  const colors = {
-    black: '#2D2D2D',       // Цёмна-шэры (амаль чорны) для тэксту
-    red: '#E31E24',         // Класічны чырвоны
-    lightGray: '#E5E7EB',   // Светла-шэры для межаў
-    darkRed: '#991B1B',     // Цёмна-чырвоны для акцэнтаў
-    mediumGray: '#9CA3AF',  // Шэры для неактыўных элементаў
-    white: '#FFFFFF',       // Белы
-    bg: '#FAFAFA'           // Светлы фон
+  // Основная цветовая схема интерфейса (System Theme)
+  const theme = {
+    primaryText: '#2D2D2D',   // Цёмна-шэры
+    accent: '#E31E24',        // Чырвоны
+    border: '#E5E7EB',        // Светла-шэры
+    highlight: '#991B1B',     // Цёмна-чырвоны
+    muted: '#9CA3AF',         // Шэры
+    surface: '#FFFFFF',       // Белы
+    background: '#FAFAFA'      // Фон
   };
 
   const steps = [
@@ -155,7 +155,7 @@ const GrantProcess = () => {
         {/* Header Section */}
         <div className="p-8 relative overflow-hidden" style={{ backgroundColor: colors.white, borderBottom: `4px solid ${colors.red}` }}>
           <div className="relative z-10">
-            <h1 className="text-3xl md:text-4xl font-bold mb-2" style={{ color: colors.black }}>Працэс рэалізацыі праекта</h1>
+            <h1 className="text-3xl md:text-4xl font-bold mb-2" style={{ color: colors.black }}>Працэс падпісання грантавай дамовы</h1>
             <p className="text-lg opacity-80" style={{ color: colors.black }}>Пакрокавае кіраўніцтва: ад перамогі ў конкурсе да фінальнай справаздачы</p>
           </div>
           {/* Decorative Elements - BChB Style stripes */}
