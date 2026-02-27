@@ -4,17 +4,17 @@ import { Mail, UserCheck, PenTool, TrendingUp, AlertTriangle, CheckCircle, Arrow
 const GrantProcess = () => {
   const [activeStep, setActiveStep] = useState(0);
 
-  // Основная цветовая схема интерфейса (System Theme)
-  const theme = {
-    primaryText: '#2D2D2D',   // Цёмна-шэры
-    accent: '#E31E24',        // Чырвоны
-    border: '#E5E7EB',        // Светла-шэры
-    highlight: '#991B1B',     // Цёмна-чырвоны
-    muted: '#9CA3AF',         // Шэры
-    surface: '#FFFFFF',       // Белы
-    background: '#FAFAFA'      // Фон
+  // Палітра ў стылі БЧБ (Белы-Чырвоны-Белы)
+  const colors = {
+    black: '#2D2D2D',       // Цёмна-шэры (амаль чорны) для тэксту
+    red: '#E31E24',         // Класічны чырвоны
+    lightGray: '#E5E7EB',   // Светла-шэры для межаў
+    darkRed: '#991B1B',     // Цёмна-чырвоны для акцэнтаў
+    mediumGray: '#9CA3AF',  // Шэры для неактыўных элементаў
+    white: '#FFFFFF',       // Белы
+    bg: '#FAFAFA'           // Светлы фон
   };
-
+  
   const steps = [
     {
       id: 0,
