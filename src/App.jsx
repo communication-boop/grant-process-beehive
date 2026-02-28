@@ -150,14 +150,14 @@ const GrantProcess = () => {
   ];
 
   return (
-    <div className="min-h-screen p-2 md:p-4 font-sans" style={{ backgroundColor: colors.bg, color: colors.black }}>
+    <div className="min-h-screen text-sm p-2 md:p-4 font-sans" style={{ backgroundColor: colors.bg, color: colors.black }}>
       <div className="max-w-7xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100">
         
         {/* Header Section */}
         <div className="p-8 relative overflow-hidden" style={{ backgroundColor: colors.white, borderBottom: `4px solid ${colors.red}` }}>
           <div className="relative z-10">
-            <h1 className="text-3xl md:text-4xl font-bold mb-2" style={{ color: colors.black }}>Працэс падпісання грантавай дамовы</h1>
-            <p className="text-lg opacity-80" style={{ color: colors.black }}>Пакрокавае кіраўніцтва: ад перамогі ў конкурсе да фінальнай справаздачы</p>
+            <h1 className="text-2xl md:text-3xl font-bold mb-2" style={{ color: colors.black }}>Працэс падпісання грантавай дамовы</h1>
+            <p className="text-sm opacity-80" style={{ color: colors.black }}>Пакрокавае кіраўніцтва: ад перамогі ў конкурсе да фінальнай справаздачы</p>
           </div>
           {/* Decorative Elements - BChB Style stripes */}
           <div className="absolute right-0 top-0 bottom-0 w-32 opacity-10" style={{ backgroundColor: colors.red, transform: 'skewX(-20deg) translateX(50%)' }}></div>
@@ -204,7 +204,7 @@ const GrantProcess = () => {
         </div>
 
         {/* Content Area */}
-        <div className="p-4 md:p-6 min-h-[400px] flex flex-col md:flex-row gap-8 animate-fadeIn">
+        <div className="p-4 md:p-6 min-h-[400px] flex flex-col md:flex-row gap-4 animate-fadeIn">
           
           {/* Left Column: Visual & Header */}
           <div className="md:w-1/3 flex flex-col gap-4">
@@ -217,7 +217,7 @@ const GrantProcess = () => {
             
             {/* Added conditional rendering for heading */}
             {steps[activeStep].content.heading && (
-              <p className="text-lg font-medium" style={{ color: '#4B5563' }}>
+              <p className="text-sm font-medium" style={{ color: '#4B5563' }}>
                 {steps[activeStep].content.heading}
               </p>
             )}
@@ -227,7 +227,7 @@ const GrantProcess = () => {
 
           {/* Right Column: Details & Checklists */}
           <div className="md:w-2/3 rounded-xl p-6 border shadow-sm" style={{ backgroundColor: colors.white, borderColor: colors.lightGray }}>
-            <p className="mb-6 text-lg leading-relaxed" style={{ color: '#374151' }}>
+            <p className="mb-6 text-sm leading-relaxed" style={{ color: '#374151' }}>
               {steps[activeStep].content.desc}
             </p>
 
@@ -236,7 +236,7 @@ const GrantProcess = () => {
               <div className="space-y-3 mb-6">
                 <h3 className="text-sm uppercase tracking-wide font-bold mb-2" style={{ color: colors.mediumGray }}>Што трэба зрабіць:</h3>
                 {steps[activeStep].content.actions.map((action, i) => (
-                  <div key={i} className="flex items-start gap-3 bg-gray-50 p-3 rounded-lg shadow-sm border border-gray-100">
+                  <div key={i} className="flex items-start gap-2 bg-gray-50 p-2 rounded-lg shadow-sm border border-gray-100">
                     <div className="mt-1 min-w-[16px]" style={{ color: colors.red }}>
                       <CheckCircle size={18} />
                     </div>
@@ -284,7 +284,7 @@ const GrantProcess = () => {
 
             {/* Highlight (Monitoring/Blue Block) */}
              {steps[activeStep].content.highlight && (
-              <div className="flex items-start gap-3 p-4 rounded-lg border mt-4 bg-blue-50" style={{ borderColor: '#DBEAFE' }}>
+              <div className="flex items-start gap-2 p-4 rounded-lg border mt-4 bg-blue-50" style={{ borderColor: '#DBEAFE' }}>
                 <Shield className="min-w-[20px]" style={{ color: '#1E40AF' }} />
                 <p className="text-sm font-semibold" style={{ color: '#1E3A8A' }}>{steps[activeStep].content.highlight}</p>
               </div>
@@ -292,7 +292,7 @@ const GrantProcess = () => {
 
             {/* Warnings (Red Block) */}
             {steps[activeStep].content.warning && (
-              <div className="flex items-start gap-3 p-4 rounded-lg border-l-4 mt-4 shadow-sm" style={{ backgroundColor: '#FFF5F5', borderColor: '#FED7D7', borderLeftColor: colors.red }}>
+              <div className="flex items-start gap-2 p-4 rounded-lg border-l-4 mt-4 shadow-sm" style={{ backgroundColor: '#FFF5F5', borderColor: '#FED7D7', borderLeftColor: colors.red }}>
                 <AlertTriangle className="min-w-[20px]" style={{ color: colors.red }} />
                 <div className="text-sm font-semibold" style={{ color: '#991B1B' }}>{steps[activeStep].content.warning}</div>
               </div>
