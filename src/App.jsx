@@ -154,7 +154,7 @@ const GrantProcess = () => {
       <div className="max-w-7xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100">
         
         {/* Header Section */}
-        <div className="p-8 relative overflow-hidden" style={{ backgroundColor: colors.white, borderBottom: `4px solid ${colors.red}` }}>
+        <div className="p-4 sm:p-6 md:p-8 relative overflow-hidden" style={{ backgroundColor: colors.white, borderBottom: `4px solid ${colors.red}` }}>
           <div className="relative z-10">
             <h1 className="text-2xl md:text-3xl font-bold mb-2" style={{ color: colors.black }}>Працэс падпісання грантавай дамовы</h1>
             <p className="text-sm opacity-80" style={{ color: colors.black }}>Пакрокавае кіраўніцтва: ад перамогі ў конкурсе да фінальнай справаздачы</p>
@@ -166,7 +166,7 @@ const GrantProcess = () => {
 
         {/* Timeline Navigation */}
         <div className="border-b overflow-x-auto" style={{ backgroundColor: colors.white, borderColor: colors.lightGray }}>
-          <div className="flex min-w-max md:min-w-0 md:justify-between p-4 relative">
+          <div className="flex min-w-max md:min-w-0 md:justify-between p-2 sm:p-4 relative">
             
             {/* Connecting Line */}
             <div className="hidden md:block absolute top-1/2 left-10 right-10 h-0.5 -translate-y-1/2 z-0" style={{ backgroundColor: colors.lightGray }}></div>
