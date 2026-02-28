@@ -150,8 +150,8 @@ const GrantProcess = () => {
   ];
 
   return (
-    <div className="min-h-screen p-4 md:p-8 font-sans" style={{ backgroundColor: colors.bg, color: colors.black }}>
-      <div className="max-w-5xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100">
+    <div className="min-h-screen p-2 md:p-4 font-sans" style={{ backgroundColor: colors.bg, color: colors.black }}>
+      <div className="max-w-7xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100">
         
         {/* Header Section */}
         <div className="p-8 relative overflow-hidden" style={{ backgroundColor: colors.white, borderBottom: `4px solid ${colors.red}` }}>
@@ -204,7 +204,7 @@ const GrantProcess = () => {
         </div>
 
         {/* Content Area */}
-        <div className="p-6 md:p-10 min-h-[400px] flex flex-col md:flex-row gap-8 animate-fadeIn">
+        <div className="p-4 md:p-6 min-h-[400px] flex flex-col md:flex-row gap-8 animate-fadeIn">
           
           {/* Left Column: Visual & Header */}
           <div className="md:w-1/3 flex flex-col gap-4">
