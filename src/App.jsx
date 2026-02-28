@@ -154,7 +154,7 @@ const GrantProcess = () => {
       <div className="max-w-7xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100">
         
         {/* Header Section */}
-        <div className="p-4 sm:p-6 md:p-8 relative overflow-hidden" style={{ backgroundColor: colors.white, borderBottom: `4px solid ${colors.red}` }}>
+        <div className="p-3 sm:p-4 md:p-5 relative overflow-hidden" style={{ backgroundColor: colors.white, borderBottom: `4px solid ${colors.red}` }}>
           <div className="relative z-10">
             <h1 className="text-2xl md:text-3xl font-bold mb-2" style={{ color: colors.black }}>Працэс падпісання грантавай дамовы</h1>
             <p className="text-sm opacity-80" style={{ color: colors.black }}>Пакрокавае кіраўніцтва: ад перамогі ў конкурсе да фінальнай справаздачы</p>
@@ -166,7 +166,7 @@ const GrantProcess = () => {
 
         {/* Timeline Navigation */}
         <div className="border-b overflow-x-auto" style={{ backgroundColor: colors.white, borderColor: colors.lightGray }}>
-          <div className="flex min-w-max md:min-w-0 md:justify-between p-2 sm:p-4 relative">
+          <div className="flex min-w-max md:min-w-0 md:justify-between p-1 sm:p-2 relative">
             
             {/* Connecting Line */}
             <div className="hidden md:block absolute top-1/2 left-10 right-10 h-0.5 -translate-y-1/2 z-0" style={{ backgroundColor: colors.lightGray }}></div>
@@ -178,7 +178,7 @@ const GrantProcess = () => {
                 className={`relative z-10 flex flex-col items-center justify-center p-2 min-w-[80px] md:w-full group transition-all duration-300 focus:outline-none`}
               >
                 <div 
-                  className={`w-12 h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center shadow-md border-4 transition-all duration-300`}
+                  className={`w-8 h-8 md:w-10 md:h-10 rounded-full flex items-center justify-center shadow-md border-4 transition-all duration-300`}
                   style={{ 
                     backgroundColor: activeStep === index ? colors.red : colors.white,
                     borderColor: activeStep === index ? colors.red : (activeStep > index ? colors.black : colors.lightGray),
@@ -186,11 +186,11 @@ const GrantProcess = () => {
                   }}
                 >
                   <div className={`transition-colors duration-300`} style={{ color: activeStep === index ? colors.white : (activeStep > index ? colors.black : colors.mediumGray) }}>
-                     {activeStep > index ? <CheckCircle size={24} /> : step.icon}
+                     {activeStep > index ? <CheckCircle size={18} /> : step.icon}
                   </div>
                 </div>
                 
-                <span className={`mt-3 text-xs md:text-sm font-semibold whitespace-nowrap px-2 py-1 rounded-md transition-colors`}
+                <span className={`mt-1 text-xs md:text-sm font-semibold whitespace-nowrap px-2 py-1 rounded-md transition-colors`}
                   style={{ 
                     color: activeStep === index ? colors.red : colors.mediumGray,
                     backgroundColor: activeStep === index ? '#FEF2F2' : 'transparent', 
